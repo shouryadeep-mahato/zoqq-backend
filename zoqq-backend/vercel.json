@@ -1,28 +1,8 @@
 {
   "version": 3,
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/"
-    },
-
-    {
-      "src": "/OnboardingRoutes/OnboardEKYCUserTemporary",
-      "dest": "src/Controllers/OnboardingController.js",
-      "methods": ["GET", "POST"],
-      "headers": {
-        "Cache-Control": "s-maxage=1, stale-while-revalidate"
-      },
-      "config": {
-        "api": {
-          "maxDuration": 100
-        }
-      }
-    }
-  ],
   "functions": {
-    "api": {
-      "maxDuration": 30
+    "src": {
+      "maxDuration": 300
     }
   }
 }
