@@ -44,4 +44,4 @@ app.use("/AccountsRoutes", AccountsRoutes);
 //Subscription
 app.get("/listSubscriptionPlanDetails", subscriptionPlanDetails);
 
-module.exports = app;
+export default app;
